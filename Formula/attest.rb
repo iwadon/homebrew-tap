@@ -1,5 +1,5 @@
 class Attest < Formula
-  desc "A lightweight C11 unit testing framework"
+  desc "Lightweight C11 unit testing framework"
   homepage "https://github.com/iwadon/attest"
   license "MIT-0"
   head "https://github.com/iwadon/attest.git", branch: "main"
