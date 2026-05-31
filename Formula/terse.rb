@@ -1,5 +1,5 @@
 class Terse < Formula
-  desc "C library that unifies rendering, input, and terminal capability detection for text UI environments"
+  desc "Unified rendering, input, and capability detection for terminal UIs"
   homepage "https://github.com/iwadon/terse"
   license "MIT-0"
   head "https://github.com/iwadon/terse.git", branch: "master"
