@@ -12,6 +12,7 @@ class TersePrompt < Formula
       -DTPROMPT_BUILD_TESTING=OFF
       -DTPROMPT_BUILD_EXAMPLES=OFF
       -DTPROMPT_USE_TERSE_TEST_MODE=OFF
+      -DTPROMPT_USE_SYSTEM_TERSE=ON
     ]
     system "cmake", "-S", ".", "-B", "build", *configure_args
     system "cmake", "--build", "build"
