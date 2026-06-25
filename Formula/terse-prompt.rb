@@ -37,7 +37,9 @@ class TersePrompt < Formula
         return 0;
       }
     EOS
-    system ENV.cc, "test.c", "-I#{include}", "-L#{lib}", "-ltprompt", "-L#{Formula["terse"].opt_lib}", "-lterse", "-liconv", "-o", "test"
+    terse_lib = formula_opt_lib("terse")
+    system ENV.cc, "test.c", "-I#{include}", "-L#{lib}", "-ltprompt",
+           "-L#{terse_lib}", "-lterse", "-liconv", "-o", "test"
     system "./test"
   end
 end
